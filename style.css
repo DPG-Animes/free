@@ -1,0 +1,350 @@
+.item img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.categoria {
+    margin-bottom: 30px;
+}
+
+.categoria h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.carrossel {
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.item {
+    width: 140px;
+    height: 240px;
+    background-color: #000;
+    border-radius: 8px;
+    position: relative;
+    flex-shrink: 1;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.menu {
+    padding: 20px;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    width: 140px;
+    height: 220px;
+}
+
+/* Definindo um estilo básico para a categoria */
+.categoria {
+    margin-bottom: 20px;
+}
+
+/* Definindo a largura do carrossel e centralizando */
+.carrossel {
+    overflow-x: scroll;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+/* Definindo o tamanho das imagens */
+.carrossel .item img {
+    width: 140px;
+    height: 220px;
+    height: cover; /* Altura proporcional */
+    object-fit: cover; /* Garante que a imagem preencha o espaço de forma proporcional */
+    border-radius: 10px; /* Opção para bordas arredondadas */
+}
+
+/* Adicionando estilo ao título da categoria */
+.categoria h2 {
+    font-size: 22px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000; /* Cor de fundo opcional */
+}
+
+.logo {
+    height: 40px; /* Ajuste conforme necessário */
+    width: auto;
+    position: center;
+}
+
+body {
+    background-color: #141414;
+    color: white;
+}
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+
+.banner {
+    background: url('img/one_piece.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    padding: 50px;
+}
+
+.banner .info {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+button1 {
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 20px;
+    margin: 10px 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 10px;
+    background-color: Black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.catalogo {
+    padding: 10px;
+    font-size: 15px;
+}
+
+h2 {
+    margin-bottom: 15px; /* Ajuste esse valor conforme necessário */
+}carrossel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.anime-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+}
+
+.anime img {
+    width: 300px;  
+    border-radius: 31px;
+}
+
+/* Estilo para links no menu */
+nav a {
+    color: white; /* Cor branca por padrão */
+    text-decoration: none; /* Remover sublinhado */
+}
+
+/* Estilo para o link quando clicado */
+nav a:active, nav a:focus {
+    color: blue; /* Cor azul quando clicado */
+}
+
+/* Estilo para quando o link está em foco (quando o link está selecionado) */
+nav a:focus {
+    outline: none; /* Remover a borda ao clicar */
+}
+.linha-vermelha {
+    display: inline-block;
+    width: 4px; /* Ajuste a largura da linha */
+    height: 20px; /* Ajuste a altura conforme necessário */
+    background-color: blue;
+    margin-right: 10px; /* Espaço entre a linha e o texto */
+    vertical-align: middle;
+}
+
+/* Adiciona um contorno fino às imagens */
+.anime img {
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    transition: transform 0.3s ease-in-out, border-color 0.3s;
+}
+
+/* Efeito de zoom ao passar o mouse (desktop) */
+.anime img:hover {
+    transform: scale(1.1);
+}
+
+/* Efeito de toque (mobile) */
+@media (max-width: 1024px) {
+    .anime img:active {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out, border-color 0.3s;
+        
+    }
+    
+
+#menu-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Drawer */
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -270px;
+    width: 230px;
+    height: 100%;
+    background: #111;
+    color: white;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    padding-top: 15px;
+}
+
+.drawer.open {
+    left: 0;
+}
+
+.profile {
+    text-align: center;
+    padding: 10px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.profile span {
+    display: block;
+    font-weight: bold;
+}
+
+.profile p {
+    font-size: 12px;
+    color: gray;
+}
+
+.drawer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer ul li {
+    padding: 1px 15px; /* Reduzi o padding */
+    margin: 2px 0; /* Reduzi a margem entre os itens */
+}
+.drawer ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+.drawer ul li a:hover {
+    background: #333;
+}
+
+.drawer ul li.selected a {
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+.drawer .icon {
+    width: 24px; /* Ajuste o tamanho conforme necessário */
+    height: 24px;
+}
+.carrossel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+item {
+    width: 140px;
+    height: 215px;
+    background-color: #333;
+    border-radius: 8px;
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ffffff; /* Cor branca, mude conforme necessário */
+    margin: 20px 0;
+}
+
+titulo-filme {
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+}
+
+item:hover {
+    transform: scale(1.1);
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo-filme {
+    margin-top: 5px; /* Espaço entre a imagem e o texto */
+    font-size: 16px; /* Ajuste do tamanho do texto */
+    font-weight: bold;
+}

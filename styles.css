@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+}
+
+.menu {
+    padding: 20px;
+}
+
+.categoria {
+    margin-bottom: 30px;
+}
+
+.categoria h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.carrossel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+}
+
+.item {
+    width: 140px;
+    height: 220px;
+    background-color: #333;
+    border-radius: 8px;
+    position: relative;
+    flex-shrink: 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+/* Definindo um estilo básico para a categoria */
+.categoria {
+    margin-bottom: 20px;
+}
+
+/* Definindo a largura do carrossel e centralizando */
+.carrossel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+/* Definindo o tamanho das imagens */
+.carrossel .item img {
+    width: 140px;
+    height: 220px;
+    height: cover; /* Altura proporcional */
+    object-fit: cover; /* Garante que a imagem preencha o espaço de forma proporcional */
+    border-radius: 10px; /* Opção para bordas arredondadas */
+}
+
+/* Adicionando estilo ao título da categoria */
+.categoria h2 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+   /* Estilos para o botão de voltar */
+        .botao-voltar {
+            position: fixed;
+            top: 20px; /* Aumenta o espaçamento do topo */
+            left: 20px; /* Aumenta o espaçamento da esquerda */
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 10; /* Garante que o botão fique acima dos outros elementos */
+        }
+        .botao-voltar img {
+            width: 30px;
+            height: 30px;
+        }
+
+        /* Espaçamento na parte superior da página */
+        .menu {
+            margin-top: 60px; /* Cria um espaço superior para evitar que o conteúdo fique em cima do botão */
+        }
+        
+        #menu-btn {
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 40px;
+    margin: 10px 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    bottom: 210px;
+    left: 50%;
+    width: 80%;
+    padding: 10px;
+    background-color: Black;
+    color: white;
+    border: none;
+    
+}

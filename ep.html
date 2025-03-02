@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Animes</title>
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 20px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        .anime-list {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 10px;
+        }
+        .anime {
+            background-color: black;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            min-width: 150px;
+        }
+        .anime img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .anime-title {
+            font-size: 14px;
+            margin: 10px 0 5px;
+        }
+        .rating {
+            color: yellow;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Outros Títulos</h2>
+        <div class="anime-list">
+            <div class="anime">
+                <img src="https://via.placeholder.com/150x200" alt="Anime 1">
+                <div class="anime-title">忍たま乱太郎</div>
+                <div class="rating">⭐ 6.2</div>
+            </div>
+            <div class="anime">
+                <img src="https://via.placeholder.com/150x200" alt="Solo Leveling">
+                <div class="anime-title">Solo Leveling</div>
+                <div class="rating">⭐ 8.6</div>
+            </div>
+            <div class="anime">
+                <img src="https://via.placeholder.com/150x200" alt="Doraemon">
+                <div class="anime-title">Doraemon: O Gato do Futuro</div>
+                <div class="rating">⭐ 8.0</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
